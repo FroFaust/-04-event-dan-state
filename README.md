@@ -114,10 +114,10 @@ Pada langkah 1, tombol selanjutnya tidak bisa digunakan,pada langkah 2, kita men
     Muncul judul "Almaty, Kazakhstan" dan dua bagian yaitu "About" dan "Etymology". Diawal, bagian "About" menampilkan isi teksnya, sedangkan Etymology hanya ada tombol "Tampilkan". Saat tombol "Tampilkan" diklik, tombol "Tampilkan' akan muncul di bagian "About" dan bagian "Etymology" akan memunculkan teksnya, Jadi saling bergantian menunjukkan teks saat dipencet tampilkan.
 
 2. **Perbandingan sebelum dan sesudah di edit pada bagian 2**
-    Saat masih menggunakan "<Chat contact={to} />" mengetik chat pada salah satu alamat email dan kita pencet tombol alamat email lainnya, akan mengubah tujuan pengiriman email tetapi text box tidak tereset. Saat kita ubah menjadi "<Chat key={to.email} contact={to} />" mengklik tombol alamat email orang yang lain akan mereset isian yang tertulis didalam text boxnya.
+    Saat masih menggunakan `"<Chat contact={to} />"` mengetik chat pada salah satu alamat email dan kita pencet tombol alamat email lainnya, akan mengubah tujuan pengiriman email tetapi text box tidak tereset. Saat kita ubah menjadi `"<Chat key={to.email} contact={to} />"` mengklik tombol alamat email orang yang lain akan mereset isian yang tertulis didalam text boxnya.
 
 ### Jawaban Soal Praktikum 6
-1. **Apa tujuan dari penulisan key={to.email} pada "<Chat key={to.email} contact={to} />"?**
+1. **Apa tujuan dari penulisan key={to.email} pada `"<Chat key={to.email} contact={to} />"`?**
     Tujuannya adalah memberitahu React bahwa jika penerima berbeda, dan itu harus dianggap sebagai komponen chat yang berbeda yang perlu dibuat kembali dari awal dengan data yang baru. tanpa key, React menganggap posisi komponen Chat di layar tidak berubah. Jadinya, pesan yang kita ketik tidak akan terhapus dan malah kebawa ke alamat email yang lainnya.
 
 2. **Apa fungsi dari props key tersebut?**
