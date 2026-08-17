@@ -45,7 +45,7 @@ Pada Praktikum 3, kita mempelajari konsep Event Propagation dan Stop Propagation
 
 2. **Mengapa Bisa Terjadi?**:
    - Di langkah 1 terdapat onClick pada elemnt child tapi juga ada di milik parents jadi keduanya tereksekusi secara berurutan
-   - Nah di langkah 2 muncullah metode stopPropagation yangMetode berfungsi menghentikan penyebaran event ke elemen di atasnya (parent), jadi fungsi "onClick" yang ada di "<div>" tidak tereksekusi juga
+   - Nah di langkah 2 muncullah metode stopPropagation yangMetode berfungsi menghentikan penyebaran event ke elemen di atasnya (parent), jadi fungsi "onClick" yang ada di `"<div>"` tidak tereksekusi juga
 
 ---
 
@@ -111,7 +111,7 @@ Pada langkah 1, tombol selanjutnya tidak bisa digunakan,pada langkah 2, kita men
 
 ### Keterangan
 1. **Hasil di Browser pada Bagian 1**
-    Muncul judul "Almaty, Kazakhstan" dan dua bagian yaitu "About" dan "Etymology". Diawal, bagian "About" menampilkan isi teksnya, sedangkan Etymology hanya ada tombol "Tampilkan". Saat tombol "Tampilkan" diklik, tombol "Tampilkan' akan muncul di bagian "About" dan bagian "Etymology" akan memunculkan teksnya, Jadi saling bergantian menunjukkan teks saat dipencet tampilkan.
+    Muncul judul "Almaty, Kazakhstan" dan dua bagian yaitu "About" dan "Etymology". Diawal, bagian "About" menampilkan isi teksnya, sedangkan Etymology hanya ada tombol "Tampilkan". Saat tombol "Tampilkan" diklik, tombol "Tampilkan" akan muncul di bagian "About" dan bagian "Etymology" akan memunculkan teksnya, Jadi saling bergantian menunjukkan teks saat dipencet tampilkan.
 
 2. **Perbandingan sebelum dan sesudah di edit pada bagian 2**
     Saat masih menggunakan `"<Chat contact={to} />"` mengetik chat pada salah satu alamat email dan kita pencet tombol alamat email lainnya, akan mengubah tujuan pengiriman email tetapi text box tidak tereset. Saat kita ubah menjadi `"<Chat key={to.email} contact={to} />"` mengklik tombol alamat email orang yang lain akan mereset isian yang tertulis didalam text boxnya.
